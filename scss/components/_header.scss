@@ -1,0 +1,38 @@
+.header__wrap {
+  background-color: #FAFAFA;
+}
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 35px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+.logo {
+  font-family: $ff-apple;
+  &:hover{
+    color: $orange;
+    transition: all 0.1s ease-out;
+  }
+}
+.nav {
+}
+.nav__list {
+  display: flex;
+  gap: 31px;
+}
+.nav__list--item {
+}
+.nav__list--link {
+  color: $black;
+
+  &:hover{
+    color: $orange;
+    border-bottom: $orange 1px solid;
+    padding-bottom: 5px;
+    transition: all 0.1s ease-out;
+  }
+}
