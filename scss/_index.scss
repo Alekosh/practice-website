@@ -1,8 +1,12 @@
 @import "./_reset.scss"; 
 @import "./_var.scss"; //переменные
 
-@import "./components/_header.scss"; //блок вместе с медиа
-@import "./components/_about.scss"; //блок вместе с медиа
+@import "./components/_header.scss";
+@import "./components/_about.scss"; 
+@import "./components/_gift.scss"; 
+@import "./components/_ready.scss"; 
+@import "./components/_media.scss"; // адаптив
+
 
 
 

@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 .header {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 35px 30px;
+  padding: 35px 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,8 +147,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about__inner--text p {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 52px;
+  text-align: justify;
+  line-height: 140.62%;
 }
 
 .about__inner--text h3 {
@@ -160,6 +162,10 @@ h1, h2, h3, h4, h5, h6 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: b;
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .about__work {
@@ -180,6 +186,158 @@ h1, h2, h3, h4, h5, h6 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: c;
+}
+
+.about__image {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.gift__wrap {
+  padding: 100px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.gift__title {
+  text-align: center;
+}
+
+.gift__title h3 {
+  font-size: 32px;
+  margin-bottom: 22px;
+}
+
+.gift__title p {
+  font-size: 18px;
+  margin-bottom: 64px;
+}
+
+.gift__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+
+.gift__item {
+  max-width: 270px;
+  background: #FAFAFA;
+}
+
+.gift__item:hover {
+  -webkit-filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
+          filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
+  background: #FFFFFF;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.gift__item--text {
+  padding: 24px;
+}
+
+.gift__item--text h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.gift__item--text p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.gift__item--text a {
+  font-size: 14px;
+}
+
+.ready__wrap {
+  padding: 80px 0;
+  background-color: #F7941E;
+}
+
+.ready {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ready__text h3 {
+  font-size: 32px;
+}
+
+.ready__text p {
+  font-size: 24px;
+}
+
+.ready__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 734px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .logo {
+    margin-bottom: 25px;
+  }
+  .header .nav__list {
+    margin-bottom: 25px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .about {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas: "b" "a" "c" "d";
+  }
+  .about__find, .about__work {
+    padding: 45px 20px;
+  }
+  .gift__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    row-gap: 20px;
+  }
+  .ready {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ready .ready__text {
+    margin-bottom: 25px;
+    text-align: center;
+  }
 }
 
 html, body {
@@ -216,6 +374,25 @@ body {
 
 .second__btn--gold {
   background: #F7941E;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 15px;
+  width: 200px;
+}
+
+.primary__btn--gray {
+  background: none;
+  text-transform: uppercase;
+  color: #231F20;
+  border: 1px solid #231F20;
+  border-radius: 5px;
+  padding: 15px;
+  width: 140px;
+}
+
+.second__btn--gray {
+  background: #231F20;
   text-transform: uppercase;
   color: #FFFFFF;
   border-radius: 5px;

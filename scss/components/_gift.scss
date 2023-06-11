@@ -1,0 +1,45 @@
+.gift__wrap {
+  padding: 100px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.gift__title {
+  text-align: center;
+  h3{
+    font-size: 32px;
+    margin-bottom: 22px;
+  }
+  p{
+    font-size: 18px;
+    margin-bottom: 64px;
+  }
+}
+.gift__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.gift__item {
+  max-width: 270px;
+  background: #FAFAFA;
+  &:hover{
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
+    background: #FFFFFF;
+    transition: all 0.2s ease;
+  }
+}
+.gift__item--text {
+  padding: 24px;
+  h4{
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  p{
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: justify;
+  }
+  a{
+    font-size: 14px;
+  }
+}

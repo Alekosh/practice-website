@@ -1,0 +1,43 @@
+@media (max-width: 734px) {
+  .header{
+    flex-direction: column;
+
+    .logo{
+      margin-bottom: 25px;
+    }
+
+    .nav__list{
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .about{
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "b"
+    "a"
+    "c"
+    "d"
+    ;
+  }
+  .about__find, .about__work{
+    padding: 45px 20px;
+  }
+  .gift__list{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+  }
+  .ready {
+    flex-direction: column;
+    justify-content: center;
+
+    .ready__text{
+      margin-bottom: 25px;
+      text-align: center;
+    }
+  }
+}

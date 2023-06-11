@@ -33,3 +33,20 @@ body{
 	padding: 15px;
 	width: 200px;
 }
+.primary__btn--gray{
+	background: none;
+	text-transform: uppercase;
+	color: $gray;
+	border: 1px solid $gray;
+	border-radius: 5px;
+	padding: 15px;
+	width: 140px;
+}
+.second__btn--gray{
+	background: $gray;
+	text-transform: uppercase;
+	color: $white;
+	border-radius: 5px;
+	padding: 15px;
+	width: 200px;
+}
