@@ -82,6 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo {
   font-family: "Homemade Apple", cursive;
+  font-size: 18px;
 }
 
 .logo:hover {
@@ -99,6 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav__list--link {
   color: #000000;
+  font-size: 18px;
 }
 
 .nav__list--link:hover {
@@ -385,6 +387,54 @@ h1, h2, h3, h4, h5, h6 {
   grid-area: c;
 }
 
+.footer__warp {
+  padding: 160px 0 35px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .logo {
+  color: #F7941E;
+  margin: 0 80px;
+}
+
+.footer .nav {
+  margin: 0 15px;
+}
+
+.footer__hp {
+  height: 1px;
+  width: 85%;
+  background-color: #000000;
+  margin: 43px 0 55px;
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 62px;
+}
+
+.footer__copyrate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
 @media (max-width: 734px) {
   .header {
     -webkit-box-orient: vertical;
@@ -486,6 +536,19 @@ h1, h2, h3, h4, h5, h6 {
   }
   .blogs__item {
     padding: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer .nav__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .logo {
+    margin: 0 15px;
   }
 }
 

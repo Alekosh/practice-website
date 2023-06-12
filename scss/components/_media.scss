@@ -91,3 +91,15 @@
     padding: 15px;
   }
 }
+@media (max-width: 600px) {
+  .footer{
+
+    .nav__list {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .logo{
+      margin: 0 15px;
+    }
+  }
+}
